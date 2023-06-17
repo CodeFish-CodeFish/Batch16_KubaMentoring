@@ -31,13 +31,8 @@ public class Sliders {
         for (int i = 0; i < allInputs.size(); i++) {
 
             while (!allOutPut.get(i).getText().equals("85")){
-               if (allOutPut.get(i).getText().equals("85")){
-                   break;
-               }else {
-                   allInputs.get(i).sendKeys(Keys.ARROW_RIGHT);
-               }
+                allInputs.get(i).sendKeys(Keys.ARROW_RIGHT);
             }
-
         }
 
         driver.quit();
